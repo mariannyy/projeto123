@@ -2,7 +2,7 @@ noseX=0;
 noseY=0;
 
 function preload(){
-    clown_nose=loadImage('https://i.postimg.cc/PxFvYgkv/l1.png');
+    clown_nose=loadImage('https://i.postimg.cc/PxFvYgkv/l1.png')
 }
 function setup(){
     canvas=createCanvas(300, 300);
@@ -26,8 +26,8 @@ function gotPoses(results){
     }
 }
 function draw(){
-    Image(video, 0,0,300,300);
-    Image(clown_nose,noseX,noseY,50,20);
+    image(video, 0,0,300,300);
+    image(clown_nose,noseX,noseY,50,20);
 }
 function take_snapshot(){
     save('myFilterImage.png');
